@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loja_virtual/screens/home_screen.dart';
+import 'package:loja_virtual/widgets/custom_drawer.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
         primaryColor: Color.fromARGB(255, 4, 125, 141)
       ),
       debugShowCheckedModeBanner: false,
-      home:HomeScreen()
+      home:Scaffold(        
+        body: HomeScreen(),
+      )
     );
   }
 }
